@@ -1,0 +1,150 @@
+{% extends 'web/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <!--两行-->
+    <ul class="ul-list">
+        <li style="margin-left: 9%;">
+            <a href="#">
+                <img src="{% static "images/icon1.png" %}" alt="">
+                <span>中国有机
+		    <br/>产品认证</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon2.png' %}">
+                <span>亚洲葡萄酒
+			<br/>大赛铜奖</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon3.png' %}">
+                <span>亚洲葡萄酒
+			<br/>指南铜奖</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon4.png' %}">
+                <span>品醇客葡萄酒
+			<br/>大赛铜奖</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon5.png' %}">
+                <span>WINE100葡萄酒
+			<br/>大赛金奖</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon6.png' %}">
+                <span>中国原产地域
+			<br/>产品保护</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'images/icon7.png' %}">
+                <span>德国有机葡萄酒
+			<br/>大赛金奖</span>
+            </a>
+        </li>
+    </ul>
+    <!--产品展示-->
+    <div class="events agile">
+        <div class="container">
+            <div class="line-img">
+                <img src="{% static 'images/line.png' %}">
+            </div>
+            <div class="text-img">
+                <img src="{% static 'images/text.png' %}">
+            </div>
+            <div class="bnr-galry">
+                <div class="col-md-3 bnr-position">
+                    <div class=" bnr-galry-left wow fadeInLeft" data-wow-delay=".5s">
+                        <a href="singlepage.html" class="mask">
+                            <img src="{% static 'images/s4.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <!-- 文字 -->
+                    <div class="col-md-4 events-left wow  animated" id="events-one">
+                    </div>
+                </div>
+
+                <div class="col-md-3 bnr-position2">
+                    <div class="bnr-galry-right wow fadeInUp" data-wow-delay=".5s">
+                        <a href="singlepage.html" class="mask">
+                            <img src="{% static 'images/s10.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <!-- 文字 -->
+                    <div class="col-md-4 events-right wow  animated" id="events-two">
+                    </div>
+                </div>
+
+                <div class="col-md-3 bnr-position3">
+
+                    <div class=" bnr-galry-right wow fadeInRight animated" data-wow-delay=".5s">
+                        <a href="singlepage.html" class="mask">
+                            <img src="{% static 'images/10.jpg' %}" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <!-- 文字 -->
+                    <div class="col-md-4 events-right wow  animated" id="events-three">
+                    </div>
+                </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="events-grids">
+                <!-- <div class="col-md-4 events-left wow  animated" id="events-one">
+                    <h3>龙驿2013陶罐赤霞珠</h3>
+                    <ul>
+                        <li><a href="singlepage.html">产区：宁夏红寺堡</a></li>
+                        <li><a href="singlepage.html">酒型：干型</a></li>
+                        <li><a href="singlepage.html">含量：750ml</a></li>
+                        <li><a href="singlepage.html">度数：13.5%vol</a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="col-md-4 events-right wow fadeInUp animated" data-wow-delay=".5s">
+                    <h3>龙驿2013陶罐赤霞珠</h3>
+                    <ul>
+                        <li><a href="singlepage.html">产区：宁夏红寺堡</a></li>
+                        <li><a href="singlepage.html">酒型：干型</a></li>
+                        <li><a href="singlepage.html">含量：750ml</a></li>
+                        <li><a href="singlepage.html">度数：13.5%vol</a></li>
+                    </ul>
+                </div> -->
+                <!-- <div class="col-md-4 events-right wow fadeInRight animated" data-wow-delay=".5s">
+                    <h3>龙驿2013陶罐赤霞珠</h3>
+                    <ul>
+                        <li><a href="singlepage.html">产区：宁夏红寺堡</a></li>
+                        <li><a href="singlepage.html">酒型：干型</a></li>
+                        <li><a href="singlepage.html">含量：750ml</a></li>
+                        <li><a href="singlepage.html">度数：13.5%vol</a></li>
+                    </ul>
+                </div> -->
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="index-img">
+        <img src="{% static 'images/index-line.jpg' %}" style="margin-bottom: 3%;">
+        <img src="{% static 'images/index.jpg' %}" style="margin-bottom: 4%;">
+    </div>
+    <!--end-->
+    <!--大图-->
+    <!-- <div class="content-middle wthree">
+        <div class="container">
+            <div class="mid-content wow fadeInRight animated" data-wow-delay=".5s">
+            </div>
+        </div>
+    </div> -->
+    <div class="index-dtimg"><img src="{% static 'images/index-img1.jpg' %}"></div>
+    <div class="index-btnimg"><img src="{% static 'images/index-img.jpg' %}"></div>
+{% endblock %}

@@ -1,0 +1,184 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+{% block title %}
+    <title>龙驿酒庄</title>
+{% endblock %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<link rel="stylesheet" href="{% static 'css/public.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/consult.css' %}">
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+<link rel="stylesheet" href="{% static 'css/swipebox.css' %}">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="shortcut icon" href="{% static 'images/icon.png' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+<div class="header">
+    <!--logo-->
+    <div class="logo wow fadeInLeft animated" data-wow-delay=".5s">
+        <h1><a href="index.html"><img src="{% static 'images/img8.jpg' %}"></a></h1>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!--/.navbar-header-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav animated wow fadeInUp animated animated" data-wow-duration="1200ms"
+                data-wow-delay="500ms">
+                <li class="active"><a href="{% url 'index' %}">首页</a></li>
+                <li><a href="{% url 'winery' %}">酒庄</a></li>
+                <li><a href="{% url 'grape' %}">葡园</a></li>
+                <li><a href="{% url 'products' %}">产品</a></li>
+                <li><a href="{% url 'advisory' %}">资讯</a></li>
+                <li><a href="{% url 'college' %}">学院</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="clearfix"></div>
+
+    <!-- search-scripts -->
+    <script src="{% static 'js/classie.js' %}"></script>
+    <script src="{% static 'js/uisearch.js' %}"></script>
+
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+    <!-- //search-scripts -->
+
+
+</div>
+<div class="banner">
+    <div class="banner-content">
+        <div class="body">
+            <div class="banner-main">
+                <section class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="{% static 'images/img8.jpg' %}" class="img-responsive"
+                                     alt="">
+                            </li>
+                            <!--<li>-->
+                            <!--<img src="../images1/img9.png" class="img-responsive" alt="">-->
+                            <!--</li>-->
+                            <!--<li>-->
+                            <!--<img src="../images1/img19.jpg" class="img-responsive" alt="">-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% block content %}
+
+{% endblock %}
+<div class="footer-wrap">
+    <div class="footer-middle-wrap">
+        <div class="main-col">
+            <div class="row pt-20">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h4 style="margin-top: 20px; font-size: 30px">龙驿酒庄
+                                <small style="margin-left: 10px">好喝才是一瓶正经的酒</small>
+                            </h4>
+                            <dl class="footer-meta-list pt-20">
+                                <dt>联系电话：</dt>
+                                <dd>17130190201</dd>
+                                <dt>联系邮箱：</dt>
+                                <dd>longyiwine@163.com</dd>
+                                <dt style="float: left;">公司地址：</dt>
+                                <dd style="float: left;">
+                                    总部：宁夏回族自治区吴忠市红寺堡区 <br>
+                                    北京分公司：北京市朝阳区十里河新华国际广场A座811室
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-top: 20px">
+                    <div class="qr-code-wrap">
+                        <img class="qr-code" src="{% static 'images/code-2.jpg' %}">
+                    </div>
+                    <div class="pt-20 pb-20 qrcode-title">
+                        漠天得葡萄酒微信服务号
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-top: 20px">
+                    <div class="qr-code-wrap">
+                        <img class="qr-code" src="{% static 'images/code-1.jpg' %}">
+                    </div>
+                    <div class="pt-20 pb-20 qrcode-title" style="margin-left: 18px">
+                        龙驿酒庄微信服务号
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright @<a href="">龙泽酒庄</a></span>|
+                    <span><a href="">京ICP备11008151号</a></span>|
+                    <span><a href="">京公网安备11010802014853</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/base.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script src="{% static 'js/jquery.swipebox.min.js' %}"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(function () {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<script type="application/x-javascript">
+    addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+
+</script>
+<script>
+    new UISearch(document.getElementById('sb-search'));
+</script>
+</html>

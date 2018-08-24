@@ -1,0 +1,108 @@
+.index-btnimg img {
+    text-align: center;
+    width: 100%;
+
+}
+
+#events-one {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 81%;
+}
+
+.bnr-position {
+    overflow: hidden;
+    position: relative;
+    margin-right: 9%;
+    margin-left: 1%;
+}
+
+.bnr-position:hover #events-one {
+    display: block;
+    cursor: pointer;
+}
+
+.bnr-position2 {
+    overflow: hidden;
+    position: relative;
+    margin-right: 9%;
+}
+
+.bnr-position2:hover #events-two {
+    display: block;
+    cursor: pointer;
+}
+
+.bnr-position3 {
+    overflow: hidden;
+    position: relative;
+}
+
+.bnr-position3:hover #events-three {
+    display: block;
+    cursor: pointer;
+}
+
+#events-three {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 81%;
+}
+
+#events-two {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 81%;
+}
+
+.ul-list {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    overflow: hidden;
+
+}
+
+.ul-list li {
+    float: left;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.ul-list li span {
+    display: block;
+    font-size: 18px;
+}
+
+.index-img {
+    text-align: center;
+}
+
+.ul-list li a img {
+    padding-bottom: 10%;
+    width: 70px;
+    height: 70px;
+}
+
+.events {
+    width: 1200px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+}
+
+.container {
+    width: 1200px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+}
+
+.index-dtimg {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
